@@ -3,13 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="styles.css">
     <title>Welcome</title>
 </head>
 <body class="text-gray-600">
-    <header class="my-8 mx-8">
-        <nav class="bg-indigo-200 rounded-b-lg shadow-lg">
-            <ul class="flex justify-around items-center py-3 mb-3">
+    <header class="pt-8 px-8 text-2xl">
+        <nav class="rounded-b-lg shadow-lg">
+            <ul class="flex justify-around items-center py-3 pb-3">
                 <li>
                     <span class="flex items-center">
                         <img src="img/logo.png" alt="">
@@ -33,17 +35,27 @@
                 </li>
             </ul>
         </nav>
-        <!-- slider goes here -->
-        <div class="flex justify-center">
-            <img src="img/cool-background.png" alt="">
-        </div>
     </header>
-    <main>
+    <main class="px-16 py-8">
         <!-- Main contens goes here -->
+        <!-- slider goes here -->
+        <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+            <div><img src="img/cool-background.png" alt=""></div>
+            <div><img src="img/cool-background.png" alt=""></div>
+            <div><img src="img/cool-background.png" alt=""></div>
+            <div><img src="img/cool-background.png" alt=""></div>
+            <div><img src="img/cool-background.png" alt=""></div>
+            <div><img src="img/cool-background.png" alt=""></div>
+          </div>
         Основной контент
     </main>
     <footer>
         Подвал
     </footer>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
